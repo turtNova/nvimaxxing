@@ -52,6 +52,7 @@ vim.keymap.set('n', '<C-N>', ':NvimTreeToggle<CR>', { silent = true })
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 vim.keymap.set({ 'n', 'v' }, '<C-_>', function()
     vim.cmd.norm('gcc') end, { remap = true })
+vim.keymap.set('i', 'jk', '<ESC>')
 
 vim.pack.add({
     {src = 'https://github.com/catppuccin/nvim'},
